@@ -1,46 +1,65 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# dependencies
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+.nyc_output
+
+# Dependency directories
 node_modules/
+jspm_packages/
+bower_components/
 
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
+# Build caches / outputs
+dist
+build
+.next
+out
+.nuxt
+.parcel-cache
+.cache
+.temp
+.svelte-kit/
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
+# TypeScript
 *.tsbuildinfo
 
-app-example
+# Env files
+.env
+.env.*
+!.env.example
 
-# generated native folders
-/ios
-/android
+# Package manager / misc
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
 
-# Android Studio / IntelliJ
+# IDE / editor
 .idea/
+.vscode-test
+
+# Expo / React Native
+.expo/
